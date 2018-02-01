@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Helvetica;
     font-size: 22px;
@@ -12,10 +14,13 @@ header{
   display: flex;
   position: fixed;
   justify-content: space-between;
+  align-content: flex-start;
   height: 69px;
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid seashell;
+  background-color: black;
+  margin-top: 0px;
 }
 .logo img{
   padding-left: 10px;
@@ -38,4 +43,33 @@ nav a{
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
+}
+/*immage for our mission block*/
+#mission{
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    position: relative;
+    top: 70px;
+    width: 1200px;
+    margin: auto;
+
+}
+.content{
+  height: 700px;
+  position: relative;
+  top: 300px;
+  text-align: center;
+
+  width: 1200px;
+}
+div{
+  display: block;
+}
+.test{
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
 }
