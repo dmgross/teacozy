@@ -7,74 +7,119 @@ body{
     background-color: black;
     opacity: 0.9;
     margin-top: 0;
+    text-align: center;
 }
 /*header style*/
-/*justify content made the logo and nav on the 2 sides of the screen*/
+
 header{
-  display: flex;
   position: fixed;
-  justify-content: space-between;
-  align-content: flex-start;
   height: 69px;
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
-  margin-top: 0px;
+  margin-top: -8px;
 }
-.logo img{
-  padding-left: 10px;
+header img{
+  padding: 10px;
   height: 50px;
-  padding-top: 12px;
 }
 /*nav was set to flex the flex items became positined and spaced nicely*/
 nav{
-  display: flex;
-  align-items: center;
   text-align: right;
-  margin-right: 5px;
-}
-/*spreads the nav elements nicely*/
-nav span{
-  padding: 20px 10px;
+  margin-right: 20px;
+  flex-grow: 1;
 
 }
+/*spreads the nav elements nicely*/
 nav a{
+  padding: 20px;
+
+}
+a{
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
 }
-/*immage for our mission block*/
+/*iimage for mission block*/
 #mission{
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
     position: relative;
-    top: 70px;
-    width: 1200px;
-    margin: auto;
-
+    height: 700px;
 }
-.content{
+/*Id styles*/
+#store {
+  width: 1000px;
   height: 700px;
-  position: relative;
-  top: 300px;
-  text-align: center;
-  width: 1200px;
+  margin: auto;
+  padding: 70px;
 }
-div{
-  display: block;
+#location{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  background-size: cover;
+  padding-top: 70px;
 }
-.test{
-  background-color: black;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: block;
 
-}
+
+/*global styles for flex containers*/
 .flex-container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*this is for the text over the image*/
+.container {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+}
+.main {
+  width: 1200px;
+  opacity: 0.9;
+  margin: auto;
 }
 h2,h3, h4 {
   margin: 0;
   padding: 10px 10px;
+}
+
+header img {
+  height: 50px;
+  padding: 10px;
+}
+/*size for images in stre section*/
+.item img{
+    height: 200px;
+
+    margin: 10px
+}
+.item span{
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+/*location blocks*/
+.location{
+  width: 300px;
+  opacity: 1;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 280px;
+  margin: 5px 20px;
+}
+
+/*contact*/
+#contact{
+height: 200px;
+}
+footer{
+  display: block;
+  text-align: left;
+  margin-left: 20px;
 }
